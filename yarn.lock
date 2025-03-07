@@ -378,6 +378,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"antlr4@npm:^4.13.2":
+  version: 4.13.2
+  resolution: "antlr4@npm:4.13.2"
+  checksum: 10c0/dfe7dcb24fe99ce103e1eac3ce30558a3df713cf5deeacd7e30686f5cca8206864e49b254af3bd5eff5904d31e5cd7902a7468c13dcb619da10caf3f703d03b4
+  languageName: node
+  linkType: hard
+
 "balanced-match@npm:^1.0.0":
   version: 1.0.2
   resolution: "balanced-match@npm:1.0.2"
@@ -458,6 +465,7 @@ __metadata:
     "@rollup/plugin-node-resolve": "npm:^16.0.0"
     "@rollup/plugin-terser": "npm:^0.4.4"
     "@rollup/plugin-typescript": "npm:^12.1.2"
+    antlr4: "npm:^4.13.2"
     conductor: "https://github.com/source-academy/conductor.git#0.2.1"
     rollup: "npm:^4.34.1"
     tslib: "npm:^2.8.1"
