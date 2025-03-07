@@ -9,7 +9,7 @@ export class MyEvaluator extends BasicEvaluator {
     async evaluateChunk(chunk: string): Promise<void> {
         this.someEvaluatorState++;
         eval2(chunk);
-        this.conductor.sendOutput(`Chunk ${this.someEvaluatorState} evaluated!`);
+        this.conductor.sendOutput(`Chunk ${this.someEvaluatorState} has been evaluated!`);
     }
 
     constructor(conductor: IRunnerPlugin) {
