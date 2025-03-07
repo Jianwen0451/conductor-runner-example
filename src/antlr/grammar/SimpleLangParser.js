@@ -1,24 +1,38 @@
-// Generated from grammar/SimpleLang.g4 by ANTLR 4.13.2
+// Generated from grammar/SimpleLang.g4 by ANTLR 4.9.2
 // jshint ignore: start
 import antlr4 from 'antlr4';
 import SimpleLangListener from './SimpleLangListener.js';
 import SimpleLangVisitor from './SimpleLangVisitor.js';
 
-const serializedATN = [4,1,8,27,2,0,7,0,2,1,7,1,1,0,1,0,1,0,1,1,1,1,1,1,
-1,1,1,1,1,1,3,1,14,8,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,22,8,1,10,1,12,1,25,9,
-1,1,1,0,1,2,2,0,2,0,2,1,0,1,2,1,0,3,4,27,0,4,1,0,0,0,2,13,1,0,0,0,4,5,3,
-2,1,0,5,6,5,0,0,1,6,1,1,0,0,0,7,8,6,1,-1,0,8,14,5,7,0,0,9,10,5,5,0,0,10,
-11,3,2,1,0,11,12,5,6,0,0,12,14,1,0,0,0,13,7,1,0,0,0,13,9,1,0,0,0,14,23,1,
-0,0,0,15,16,10,4,0,0,16,17,7,0,0,0,17,22,3,2,1,5,18,19,10,3,0,0,19,20,7,
-1,0,0,20,22,3,2,1,4,21,15,1,0,0,0,21,18,1,0,0,0,22,25,1,0,0,0,23,21,1,0,
-0,0,23,24,1,0,0,0,24,3,1,0,0,0,25,23,1,0,0,0,3,13,21,23];
+
+const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
+    "\u5964\u0003\n\u001d\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0003\u0002",
+    "\u0003\u0002\u0003\u0002\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003",
+    "\u0003\u0003\u0003\u0003\u0005\u0003\u0010\n\u0003\u0003\u0003\u0003",
+    "\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0007\u0003\u0018",
+    "\n\u0003\f\u0003\u000e\u0003\u001b\u000b\u0003\u0003\u0003\u0002\u0003",
+    "\u0004\u0004\u0002\u0004\u0002\u0004\u0003\u0002\u0003\u0004\u0003\u0002",
+    "\u0005\u0006\u0002\u001d\u0002\u0006\u0003\u0002\u0002\u0002\u0004\u000f",
+    "\u0003\u0002\u0002\u0002\u0006\u0007\u0005\u0004\u0003\u0002\u0007\b",
+    "\u0007\u0002\u0002\u0003\b\u0003\u0003\u0002\u0002\u0002\t\n\b\u0003",
+    "\u0001\u0002\n\u0010\u0007\t\u0002\u0002\u000b\f\u0007\u0007\u0002\u0002",
+    "\f\r\u0005\u0004\u0003\u0002\r\u000e\u0007\b\u0002\u0002\u000e\u0010",
+    "\u0003\u0002\u0002\u0002\u000f\t\u0003\u0002\u0002\u0002\u000f\u000b",
+    "\u0003\u0002\u0002\u0002\u0010\u0019\u0003\u0002\u0002\u0002\u0011\u0012",
+    "\f\u0006\u0002\u0002\u0012\u0013\t\u0002\u0002\u0002\u0013\u0018\u0005",
+    "\u0004\u0003\u0007\u0014\u0015\f\u0005\u0002\u0002\u0015\u0016\t\u0003",
+    "\u0002\u0002\u0016\u0018\u0005\u0004\u0003\u0006\u0017\u0011\u0003\u0002",
+    "\u0002\u0002\u0017\u0014\u0003\u0002\u0002\u0002\u0018\u001b\u0003\u0002",
+    "\u0002\u0002\u0019\u0017\u0003\u0002\u0002\u0002\u0019\u001a\u0003\u0002",
+    "\u0002\u0002\u001a\u0005\u0003\u0002\u0002\u0002\u001b\u0019\u0003\u0002",
+    "\u0002\u0002\u0005\u000f\u0017\u0019"].join("");
 
 
 const atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
 
 const decisionsToDFA = atn.decisionToState.map( (ds, index) => new antlr4.dfa.DFA(ds, index) );
 
-const sharedContextCache = new antlr4.atn.PredictionContextCache();
+const sharedContextCache = new antlr4.PredictionContextCache();
 
 export default class SimpleLangParser extends antlr4.Parser {
 
@@ -34,6 +48,10 @@ export default class SimpleLangParser extends antlr4.Parser {
         this.ruleNames = SimpleLangParser.ruleNames;
         this.literalNames = SimpleLangParser.literalNames;
         this.symbolicNames = SimpleLangParser.symbolicNames;
+    }
+
+    get atn() {
+        return atn;
     }
 
     sempred(localctx, ruleIndex, predIndex) {
@@ -93,17 +111,17 @@ export default class SimpleLangParser extends antlr4.Parser {
 	    let _prevctx = localctx;
 	    const _startState = 2;
 	    this.enterRecursionRule(localctx, 2, SimpleLangParser.RULE_expression, _p);
-	    var _la = 0;
+	    var _la = 0; // Token type
 	    try {
 	        this.enterOuterAlt(localctx, 1);
 	        this.state = 13;
 	        this._errHandler.sync(this);
 	        switch(this._input.LA(1)) {
-	        case 7:
+	        case SimpleLangParser.INT:
 	            this.state = 8;
 	            this.match(SimpleLangParser.INT);
 	            break;
-	        case 5:
+	        case SimpleLangParser.T__4:
 	            this.state = 9;
 	            this.match(SimpleLangParser.T__4);
 	            this.state = 10;
@@ -138,7 +156,7 @@ export default class SimpleLangParser extends antlr4.Parser {
 	                    this.state = 16;
 	                    localctx.op = this._input.LT(1);
 	                    _la = this._input.LA(1);
-	                    if(!(_la===1 || _la===2)) {
+	                    if(!(_la===SimpleLangParser.T__0 || _la===SimpleLangParser.T__1)) {
 	                        localctx.op = this._errHandler.recoverInline(this);
 	                    }
 	                    else {
@@ -159,7 +177,7 @@ export default class SimpleLangParser extends antlr4.Parser {
 	                    this.state = 19;
 	                    localctx.op = this._input.LT(1);
 	                    _la = this._input.LA(1);
-	                    if(!(_la===3 || _la===4)) {
+	                    if(!(_la===SimpleLangParser.T__2 || _la===SimpleLangParser.T__3)) {
 	                        localctx.op = this._errHandler.recoverInline(this);
 	                    }
 	                    else {
@@ -266,7 +284,7 @@ class ExpressionContext extends antlr4.ParserRuleContext {
         super(parent, invokingState);
         this.parser = parser;
         this.ruleIndex = SimpleLangParser.RULE_expression;
-        this.op = null;
+        this.op = null; // Token
     }
 
 	INT() {
