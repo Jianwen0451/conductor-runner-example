@@ -1,7 +1,7 @@
 import antlr4 from 'antlr4';
-import SimpleLangLexer from './antlr/SimpleLangLexer.js';
-import SimpleLangParser from './antlr/SimpleLangParser.js';
-import SimpleLangVisitor from './antlr/SimpleLangVisitor.js';
+import SimpleLangLexer from './antlr/grammar/SimpleLangLexer.js';
+import SimpleLangParser from './antlr/grammar/SimpleLangParser.js';
+import SimpleLangVisitor from './antlr/grammar/SimpleLangVisitor.js';
 import { BasicEvaluator } from "conductor/dist/conductor/runner";
 import { IRunnerPlugin } from "conductor/dist/conductor/runner/types";
 
@@ -29,7 +29,7 @@ class EvalVisitor extends SimpleLangVisitor {
     }
 }
 
-export class SimpleLangEvaluator extends BasicEvaluator {
+export class MyEvaluator extends BasicEvaluator {
     async evaluateChunk(chunk: string): Promise<void> {
         // set up antlr's pipeline
         const chars = new antlr4.InputStream(chunk);
